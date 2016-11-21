@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+						http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+						http://www.springframework.org/schema/util 
+						http://www.springframework.org/schema/util/spring-util-3.0.xsd">
+	<util:list id="cities">
+		<bean class="com.cities.City" p:name="HeNan0" p:state="HN0"
+			p:population="100000000" />
+		<bean class="com.cities.City" p:name="HeNan1" p:state="HN1"
+			p:population="5645756" />
+		<bean class="com.cities.City" p:name="HeNan2" p:state="HN2"
+			p:population="435325" />
+		<bean class="com.cities.City" p:name="HeNan3" p:state="HN3"
+			p:population="1560056" />
+		<bean class="com.cities.City" p:name="HeNan4" p:state="HN4"
+			p:population="789766" />
+		<bean class="com.cities.City" p:name="HeNan5" p:state="HN5"
+			p:population="45783" />
+		<bean class="com.cities.City" p:name="HeNan6" p:state="HN6"
+			p:population="342342" />
+		<bean class="com.cities.City" p:name="HeNan7" p:state="HN7"
+			p:population="243234" />
+	</util:list>
+	<bean id="address" class="com.cities.Address">
+		<property name="aBigCity">
+			<null />
+		</property>
+		<property name="bigCities" value="#{cities.$[population gt 1000000]}" />
+		<property name="city"
+			value="#{cities[T(java.lang.Math).random() * cities.size()]}" />
+		<!-- <property name="cityNames"/> -->
+	</bean>
+</beans>

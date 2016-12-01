@@ -9,7 +9,6 @@ import com.model.User;
 @Component("customService")
 public class CustomService implements ApplicationEventPublisherAware {
 	private  ApplicationEventPublisher applicationEventPublisher ;
-	@Override
 	public void setApplicationEventPublisher(
 			ApplicationEventPublisher applicationEventPublisher) {
 		// TODO Auto-generated method stub

@@ -13,7 +13,6 @@ public class UserServiceImpl implements UserService {
 	@Autowired
 	private UserDao userDao;
 
-	@Override
 	public User queryUserById(String userId) {
 		// TODO Auto-generated method stub
 		return userDao.selectUserById(userId);

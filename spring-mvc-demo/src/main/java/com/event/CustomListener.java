@@ -9,7 +9,6 @@ import com.model.User;
 @Component("customListener")
 public class CustomListener implements ApplicationListener<ApplicationEvent> {
 
-	@Override
 	public void onApplicationEvent(ApplicationEvent event) {
 		// TODO Auto-generated method stub
 		if ( event instanceof CustomEvent ) {

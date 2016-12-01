@@ -8,7 +8,6 @@ import com.spring.demo.di.model.User;
 @Repository("userDao")
 public class UserDaoImpl implements UserDao {
 
-	@Override
 	public User selectUserById(String userId) {
 		return null;
 	}

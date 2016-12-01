@@ -1,4 +1,4 @@
-package com.controller;
+package com.spring.demo.controller;
 
 import java.io.File;
 import java.io.IOException;
@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.model.User;
+import com.spring.demo.model.User;
 
 /**
  * SpringMVC中的文件上传

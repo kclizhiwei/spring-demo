@@ -1,10 +1,10 @@
-package com.event;
+package com.spring.demo.event;
 
 import org.springframework.context.ApplicationEvent;
 import org.springframework.context.ApplicationListener;
 import org.springframework.stereotype.Component;
 
-import com.model.User;
+import com.spring.demo.model.User;
 
 @Component("customListener")
 public class CustomListener implements ApplicationListener<ApplicationEvent> {

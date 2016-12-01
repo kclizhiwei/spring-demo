@@ -1,4 +1,4 @@
-package com.cities;
+package com.spring.demo.model;
 
 import java.util.List;
 

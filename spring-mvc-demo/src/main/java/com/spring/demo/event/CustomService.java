@@ -1,10 +1,10 @@
-package com.event;
+package com.spring.demo.event;
 
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.context.ApplicationEventPublisherAware;
 import org.springframework.stereotype.Component;
 
-import com.model.User;
+import com.spring.demo.model.User;
 
 @Component("customService")
 public class CustomService implements ApplicationEventPublisherAware {
